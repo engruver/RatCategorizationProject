@@ -33,7 +33,7 @@
             this.buttonStar = new System.Windows.Forms.Button();
             this.buttonRight = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.starTimer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // buttonLeft
@@ -51,6 +51,7 @@
             this.buttonStar.Size = new System.Drawing.Size(186, 170);
             this.buttonStar.TabIndex = 1;
             this.buttonStar.UseVisualStyleBackColor = true;
+            this.buttonStar.Click += new System.EventHandler(this.buttonStar_Click);
             // 
             // buttonRight
             // 
@@ -70,12 +71,12 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // timer1
+            // starTimer
             // 
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
+            this.starTimer.Interval = 15000;
+            this.starTimer.Tick += new System.EventHandler(this.starTimer_Tick);
             // 
-            // Form1
+            // View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -85,7 +86,7 @@
             this.Controls.Add(this.buttonRight);
             this.Controls.Add(this.buttonStar);
             this.Controls.Add(this.buttonLeft);
-            this.Name = "Form1";
+            this.Name = "View";
             this.Text = "Form1";
             this.ResumeLayout(false);
 
@@ -97,6 +98,6 @@
         private Button buttonStar;
         private Button buttonRight;
         private Button button1;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer starTimer;
     }
 }

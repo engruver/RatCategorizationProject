@@ -5,22 +5,38 @@ namespace RatCategorizationForm
         public View()
         {
             InitializeComponent();
-            InitializeTimer();
         }
 
-        private void InitializeTimer()
+        /// <summary>
+        /// Switches GUI between different states of the program
+        /// </summary>
+        /// <param name="state"></param>
+        public void DisplayState(State state)
         {
+            switch (state)
+            {
+                case State.STAR:
+                    break;
+                case State.BOX:
+                    break;
 
+            }
         }
 
-        private void Timer1_Tick(object Sender, EventArgs e)
-        {
 
+        private void buttonStar_Click(object sender, EventArgs e)
+        {
+            starTimer.Stop();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
+            starTimer.Start();
+        }
+
+        private void starTimer_Tick(object sender, EventArgs e)
+        {
+            
         }
     }
 }
