@@ -1,6 +1,6 @@
 ﻿namespace RatCategorizationForm
 {
-    partial class View
+    partial class RatDisplay
     {
         /// <summary>
         ///  Required designer variable.
@@ -34,6 +34,7 @@
             this.buttonRight = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.starTimer = new System.Windows.Forms.Timer(this.components);
+            this.boxTimer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // buttonLeft
@@ -43,6 +44,7 @@
             this.buttonLeft.Size = new System.Drawing.Size(186, 170);
             this.buttonLeft.TabIndex = 0;
             this.buttonLeft.UseVisualStyleBackColor = true;
+            this.buttonLeft.Click += new System.EventHandler(this.buttonLeft_Click);
             // 
             // buttonStar
             // 
@@ -60,6 +62,7 @@
             this.buttonRight.Size = new System.Drawing.Size(186, 170);
             this.buttonRight.TabIndex = 2;
             this.buttonRight.UseVisualStyleBackColor = true;
+            this.buttonRight.Click += new System.EventHandler(this.buttonRight_Click);
             // 
             // button1
             // 
@@ -67,7 +70,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(153, 54);
             this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
+            this.button1.Text = "start";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -76,7 +79,12 @@
             this.starTimer.Interval = 15000;
             this.starTimer.Tick += new System.EventHandler(this.starTimer_Tick);
             // 
-            // View
+            // boxTimer
+            // 
+            this.boxTimer.Interval = 45000;
+            this.boxTimer.Tick += new System.EventHandler(this.boxTimer_Tick);
+            // 
+            // RatDisplay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -86,7 +94,7 @@
             this.Controls.Add(this.buttonRight);
             this.Controls.Add(this.buttonStar);
             this.Controls.Add(this.buttonLeft);
-            this.Name = "View";
+            this.Name = "RatDisplay";
             this.Text = "Form1";
             this.ResumeLayout(false);
 
@@ -99,5 +107,6 @@
         private Button buttonRight;
         private Button button1;
         private System.Windows.Forms.Timer starTimer;
+        private System.Windows.Forms.Timer boxTimer;
     }
 }

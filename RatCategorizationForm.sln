@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RatCategorizationForm", "RatCategorizationForm\RatCategorizationForm.csproj", "{C30BF531-41E6-4404-8724-A74534AF1EF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RatCategorizationForm", "RatCategorizationForm\RatCategorizationForm.csproj", "{C30BF531-41E6-4404-8724-A74534AF1EF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserControl", "UserControl\UserControl.csproj", "{86AD233E-921A-4AD5-8F5F-5D3F8AABD441}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{C30BF531-41E6-4404-8724-A74534AF1EF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C30BF531-41E6-4404-8724-A74534AF1EF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C30BF531-41E6-4404-8724-A74534AF1EF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86AD233E-921A-4AD5-8F5F-5D3F8AABD441}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86AD233E-921A-4AD5-8F5F-5D3F8AABD441}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86AD233E-921A-4AD5-8F5F-5D3F8AABD441}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86AD233E-921A-4AD5-8F5F-5D3F8AABD441}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

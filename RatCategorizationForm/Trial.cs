@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RatCategorizationForm
 {
-    internal class Trial
+    public class Trial
     {
         private bool starSuccess;
         /// <summary>
@@ -18,7 +18,7 @@ namespace RatCategorizationForm
         /// <summary>
         /// Variable indicating whether or not the White Box tap was a success
         /// </summary>
-        public bool WhiteBoxSuccess { get { return starSuccess; } set { starSuccess = value; } }
+        public bool WhiteBoxSuccess { get { return whiteBoxSuccess; } set { whiteBoxSuccess = value; } }
 
     }
 }
