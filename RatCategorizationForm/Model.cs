@@ -8,8 +8,6 @@ namespace RatCategorizationForm
 {
     public class Model
     {
-
-
         /// <summary>
         /// The list of trials and their info
         /// </summary>

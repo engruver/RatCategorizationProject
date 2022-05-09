@@ -1,5 +1,6 @@
 namespace RatCategorizationForm
 {
+
     internal static class Program
     {
         /// <summary>

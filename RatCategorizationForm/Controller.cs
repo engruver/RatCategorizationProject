@@ -90,7 +90,13 @@ namespace RatCategorizationForm
         /// <returns></returns>
         public bool BoxPositionRandomizer()
         {
-            return true;
+            var rand = new Random();
+            var randBool = rand.Next(2);
+            if(randBool == 1)
+            {
+                return true;
+            }
+            else return false;
         }
 
 

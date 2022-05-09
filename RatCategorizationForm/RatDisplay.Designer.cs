@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RatDisplay));
             this.buttonLeft = new System.Windows.Forms.Button();
             this.buttonStar = new System.Windows.Forms.Button();
             this.buttonRight = new System.Windows.Forms.Button();
@@ -39,7 +40,7 @@
             // 
             // buttonLeft
             // 
-            this.buttonLeft.Location = new System.Drawing.Point(12, 117);
+            this.buttonLeft.Location = new System.Drawing.Point(25, 117);
             this.buttonLeft.Name = "buttonLeft";
             this.buttonLeft.Size = new System.Drawing.Size(186, 170);
             this.buttonLeft.TabIndex = 0;
@@ -48,6 +49,7 @@
             // 
             // buttonStar
             // 
+            this.buttonStar.Image = ((System.Drawing.Image)(resources.GetObject("buttonStar.Image")));
             this.buttonStar.Location = new System.Drawing.Point(310, 117);
             this.buttonStar.Name = "buttonStar";
             this.buttonStar.Size = new System.Drawing.Size(186, 170);

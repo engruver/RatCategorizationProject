@@ -27,18 +27,28 @@ namespace RatCategorizationForm
             {
                 case State.STAR:
                     starTimer.Start();
+                    buttonStar.Visible = true;
                     buttonStar.Enabled = true;
                     buttonLeft.Enabled = false;
+                    buttonLeft.Visible = false;
                     buttonRight.Enabled = false;
+                    buttonRight.Visible = false;
                     break;
                 case State.BOX:
                     starTimer.Stop();
                     boxTimer.Start();
                     buttonStar.Enabled = false;
-                    if(left)
+                    buttonStar.Visible = false;
+                    if (left)
+                    {
+                        buttonLeft.Visible = true;
                         buttonLeft.Enabled = true;
+                    }
                     else
+                    {
+                        buttonRight.Visible = true;
                         buttonRight.Enabled = true;
+                    }
                     break;
 
             }
