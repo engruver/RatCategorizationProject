@@ -38,6 +38,7 @@
             this.uxStartButton = new System.Windows.Forms.Button();
             this.uxShapingPhaseComboBox = new System.Windows.Forms.ComboBox();
             this.uxShapingPhaseLabel = new System.Windows.Forms.Label();
+            this.uxExportButton = new System.Windows.Forms.Button();
             this.selectionGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -134,11 +135,11 @@
             // 
             this.uxShapingPhaseComboBox.FormattingEnabled = true;
             this.uxShapingPhaseComboBox.Items.AddRange(new object[] {
-            "Phase 1",
-            "Phase 2",
-            "Phase 3",
-            "Phase 4"});
-            this.uxShapingPhaseComboBox.Location = new System.Drawing.Point(146, 49);
+            "Shaping Phase 1",
+            "Shaping Phase 2",
+            "Shaping Phase 3",
+            "Shaping Phase 4"});
+            this.uxShapingPhaseComboBox.Location = new System.Drawing.Point(124, 152);
             this.uxShapingPhaseComboBox.Name = "uxShapingPhaseComboBox";
             this.uxShapingPhaseComboBox.Size = new System.Drawing.Size(121, 21);
             this.uxShapingPhaseComboBox.TabIndex = 7;
@@ -146,18 +147,28 @@
             // uxShapingPhaseLabel
             // 
             this.uxShapingPhaseLabel.AutoSize = true;
-            this.uxShapingPhaseLabel.Location = new System.Drawing.Point(143, 23);
+            this.uxShapingPhaseLabel.Location = new System.Drawing.Point(121, 126);
             this.uxShapingPhaseLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.uxShapingPhaseLabel.Name = "uxShapingPhaseLabel";
-            this.uxShapingPhaseLabel.Size = new System.Drawing.Size(79, 13);
+            this.uxShapingPhaseLabel.Size = new System.Drawing.Size(60, 13);
             this.uxShapingPhaseLabel.TabIndex = 8;
-            this.uxShapingPhaseLabel.Text = "Shaping Phase";
+            this.uxShapingPhaseLabel.Text = "Trial Phase";
+            // 
+            // uxExportButton
+            // 
+            this.uxExportButton.Location = new System.Drawing.Point(234, 13);
+            this.uxExportButton.Name = "uxExportButton";
+            this.uxExportButton.Size = new System.Drawing.Size(104, 57);
+            this.uxExportButton.TabIndex = 9;
+            this.uxExportButton.Text = "Export Data";
+            this.uxExportButton.UseVisualStyleBackColor = true;
             // 
             // UserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(350, 262);
+            this.Controls.Add(this.uxExportButton);
             this.Controls.Add(this.uxShapingPhaseLabel);
             this.Controls.Add(this.uxShapingPhaseComboBox);
             this.Controls.Add(this.uxStartButton);
@@ -185,6 +196,7 @@
         private System.Windows.Forms.Button uxStartButton;
         private System.Windows.Forms.ComboBox uxShapingPhaseComboBox;
         private System.Windows.Forms.Label uxShapingPhaseLabel;
+        private System.Windows.Forms.Button uxExportButton;
     }
 }
 

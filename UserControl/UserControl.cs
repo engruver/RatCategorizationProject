@@ -18,7 +18,7 @@ namespace UserControl
         public UserControl()
         {
             InitializeComponent();
-            uxStartButton.Enabled = false;
+            //uxStartButton.Enabled = false;
         }
 
         private string exportPath = ""; // the external location to save data to
